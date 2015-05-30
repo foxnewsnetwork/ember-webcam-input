@@ -1,6 +1,12 @@
 # Ember-webcam-input
 
-This README outlines the details of collaborating on this Ember addon.
+Use your computer's webcam to take pictures in ember.
+
+## how to use
+
+```handlebars
+{{#ember-webcam-input name="myPictures" value=pictures}}
+```
 
 ## Installation
 

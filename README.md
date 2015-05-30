@@ -5,7 +5,7 @@ Use your computer's webcam to take pictures in ember.
 ## how to use
 
 ```handlebars
-{{#ember-webcam-input name="myPictures" value=pictures}}
+{{#ember-webcam-input name="myPictures" picUrls=urls}}
 ```
 
 ## Installation

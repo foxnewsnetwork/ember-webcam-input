@@ -5,6 +5,6 @@ module.exports = {
     // to us
   },
   afterInstall: function(options) {
-    return this.addBowerPackageToProject('webcamjs', '~1.0.0');
+    return this.addBowerPackageToProject('webcamjs', '*');
   }
 };

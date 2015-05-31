@@ -27,6 +27,7 @@ EmberWebcamInputComponent = Ember.Component.extend
   
   click: ->
     Webcam.snap (dataUri) =>
+      @sendAction "action", dataUri
       @get("picUrls")?.pushObject dataUri
 
   willDestroyElement: ->

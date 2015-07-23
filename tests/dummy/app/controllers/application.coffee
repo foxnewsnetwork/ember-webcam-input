@@ -1,8 +1,9 @@
 `import Ember from 'ember'`
 
 ApplicationController = Ember.Controller.extend
+  urls: Ember.A()
   actions:
-    ecto: (uri) -> alert uri
+    ecto: (uri) -> console.log uri
     submit: (formData) ->
       # Setting this for the integration test
       @set "model", formData

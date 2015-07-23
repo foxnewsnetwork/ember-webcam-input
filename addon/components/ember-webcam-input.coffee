@@ -1,10 +1,8 @@
 `import Ember from 'ember'`
-`import layout from '../templates/components/ember-webcam-input'`
 
 EmberWebcamInputComponent = Ember.Component.extend
   tagName: "button"
   classNames: ["ember-webcam-input"]
-  layout: layout
   type: "button"
   attributeBindings: ["type"]
   options:
@@ -19,10 +17,14 @@ EmberWebcamInputComponent = Ember.Component.extend
     fps: 45
   pathToSWF: "assets/webcam.swf"
 
+  init: ->
+    @_super arguments...
+    unless Ember.isArray @get("picUrls")
+      @set "picUrls", Ember.A() 
+
   didInsertElement: ->
     Webcam.setSWFLocation @get "pathToSWF"
     Webcam.set @get "options"
-    @set "picUrls", Ember.A []
     Webcam.attach @$()[0]
   
   click: ->

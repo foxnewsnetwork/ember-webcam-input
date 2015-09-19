@@ -1,6 +1,8 @@
 `import Ember from 'ember'`
+`import layout from '../templates/components/ember-webcam-input'`
 
 EmberWebcamInputComponent = Ember.Component.extend
+  layout: layout
   tagName: "button"
   classNames: ["ember-webcam-input"]
   type: "button"

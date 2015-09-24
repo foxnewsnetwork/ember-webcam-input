@@ -2,6 +2,8 @@
 
 Use your computer's webcam to take pictures in ember.
 
+Checkout the example here: https://foxnewsnetwork.github.io/ember-webcam-input
+
 ## how to use
 
 ```handlebars

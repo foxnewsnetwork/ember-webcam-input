@@ -1,6 +1,6 @@
 {
   "name": "ember-webcam-input",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ember input field for taking pictures with your webcam",
   "directories": {
     "doc": "doc",
